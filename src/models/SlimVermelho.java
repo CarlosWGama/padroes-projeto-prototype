@@ -1,17 +1,16 @@
 package models;
 
-public class SlimVerde extends Slim {
+public class SlimVermelho extends Slim {
 	
 	//Construtor publico para outras classe usarem
-	public SlimVerde() {} 
+	public SlimVermelho() {} 
 	
 	//Construtor apenas para o método Clone
-	private SlimVerde(SlimVerde original) {
+	private SlimVermelho(SlimVermelho original) {
 		HP = original.getHP();
 	}
-		
+	
 	public Slim clone() {
-		return new SlimVerde(this);
+		return new SlimVermelho(this);
 	}
 }
-
